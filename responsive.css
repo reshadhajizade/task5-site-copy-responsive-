@@ -1,0 +1,39 @@
+@media (max-width: 740px) {
+ 
+  .s-col-full {
+    width: 100% !important;
+    margin: 8px 0;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+
+  .nav > li:first-child {
+    display: inline-block;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav li {
+    display: block;
+  }
+  .search-btn {
+    display: none;
+  }
+
+  .nav .subnav {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .nav .subnav li {
+    padding: 12px 32px;
+  }
+
+  .contact-form .btn-send {
+    width: 100%;
+  }
+}

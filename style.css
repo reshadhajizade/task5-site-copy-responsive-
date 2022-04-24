@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.row {
+  margin: 0 -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding: 0 8px;
+}
+
+.col-third {
+  width: calc(100% / 3);
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  background-color: #000;
+  height: 46px;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav li:hover .subnav {
+  display: block;
+}
+
+.nav li:hover a {
+  background-color: #ccc;
+  color: #000;
+}
+.nav li a {
+  color: #fff;
+  line-height: 46px;
+  padding: 0 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  color: #000;
+  box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.4);
+}
+
+.nav .subnav li {
+  display: block;
+  padding: 8px 16px;
+}
+
+.nav .subnav li:hover {
+  background-color: #ccc;
+}
+
+.search-btn {
+  display: inline-block;
+  color: #fff;
+  float: right;
+  line-height: 46px;
+  padding: 0 24px;
+}
+.search-btn:hover {
+  background-color: #f44336;
+}
+.menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  color: #fff;
+  float: right;
+  line-height: 46px;
+  padding: 0 24px;
+}
+.menu-btn:hover {
+  background-color: #ccc;
+}
+
+/* slider */
+#slider {
+  position: relative;
+  background: url(./logo/chicago.jpg) no-repeat top center;
+  background-size: cover;
+  padding-top: 50%;
+  margin-top: 46px;
+}
+
+#slider .slider-1 {
+  position: absolute;
+  color: #fff;
+  bottom: 47px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider-1 .slider-heading {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.slider-1 .slider-description {
+  margin-top: 15px;
+  font-weight: bolder;
+}
+
+#band .band-about {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.cart-list {
+  padding: 32px 0;
+}
+
+.cart-item {
+  /* float: left; */
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.cart-name {
+  margin: 15px 0;
+}
+
+.cart-img {
+  width: 60%;
+  border-radius: 4px;
+}
+
+#tour {
+  background-color: #000;
+}
+
+#tour .content-section {
+  color: #fff;
+}
+
+.sold ul {
+  background-color: #fff;
+}
+
+.sold li {
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  padding: 7px 16px;
+}
+
+.sold span {
+  background-color: #f44336;
+  color: #fff;
+  margin-left: 16px;
+  padding: 2.5px 8px;
+}
+
+.sold .number-tickets {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  float: right;
+  margin-right: 16px;
+}
+
+.places-list {
+  padding: 32px 0;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-img {
+  width: 100%;
+}
+
+.place-content {
+  background-color: #fff;
+  color: #000;
+  margin-top: -8px;
+  padding: 0 16px;
+}
+.place-name {
+  margin: 15px 0;
+  display: inline-block;
+}
+
+.place-date {
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+.place-description {
+  margin-bottom: 15px;
+}
+.ticket-btn {
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #000;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.ticket-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.contact-content {
+  padding: 32px 0;
+}
+.contact-info {
+  font-size: 18px;
+}
+
+.contact-icon {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form .form-input {
+  width: 100%;
+  padding: 10.5px 8px;
+  border: 1px solid #ccc;
+}
+
+.row2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.contact-form .btn-send {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 17.5px;
+  margin: 16px 0;
+  float: right;
+}
+.contact-form .btn-send:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.content-section {
+  padding: 64px 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-section .content-heading {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 4px;
+}
+
+.content-section .content-subheading {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+#map img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .social-list i {
+  font-size: 25px;
+  padding: 4px 8px;
+  opacity: 0.7;
+}
+
+#footer .copyright {
+  margin: 15px 0;
+  color: #000;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+#footer .copyright a {
+  opacity: 0.8;
+  color: #000;
+  font-size: 18px;
+  padding: 14px 7px;
+}
